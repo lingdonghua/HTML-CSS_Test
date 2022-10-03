@@ -1,0 +1,386 @@
+/* index的样式表 */
+.wrapper {
+    overflow: hidden;
+}
+.banner {
+    position: relative;
+    height: 500px;
+    background-color: pink;
+}
+.banner .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 251px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.8);
+}
+.banner .left ul li {
+    padding-left: 36px;
+    padding-right: 19px;
+    height: 50px;
+    line-height: 50px;
+}
+.banner .left ul li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+.banner .left ul li a span {
+    margin-right: 15px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.banner .left ul li a::after{
+    float: right;
+    margin: 19px auto;
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -110px;
+}
+.banner .left ul li:hover {
+    background-color: #27ba9b;
+}
+.banner .prev {
+    display: none;
+    position: absolute;
+    left: 260px;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../images/sprites.png);
+    background-position: -21px -60px;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.banner .next {
+    display: none;
+    position: absolute;
+    left: 1185px;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../images/sprites.png);
+    background-position: 13px -60px;
+    background-color: rgba(0,0,0,0.2);
+}
+.banner ol {
+    display: inline-block;
+    position: absolute;
+    left: 680px;
+    bottom: 31px;
+}
+.banner ol li {
+    float: left;
+    margin-right: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.43);
+}
+.banner ol .current {
+    background-color: #fff;
+}
+.banner .lunbotu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+}
+.banner .lunbotu li {
+    display: inline-block;
+}
+.banner .lunbotu li img {
+    width: 1240px;
+    height: 500px;
+}
+.xinxiang .nav,
+.shengxian .nav {
+    height: 114px;
+}
+.xinxiang .nav .left,
+.shengxian .nav .left
+ {
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 29px;
+}
+.xinxiang .nav .mid,
+.shengxian .nav .mid{
+    float: left;
+    margin-left: 34px;
+    margin-top: 52px;
+    font-size: 14px;
+    color: #999999;
+}
+.xinxiang .nav .right a,
+.shengxian .nav .right a{
+    position: relative;
+    float: right;
+    margin-left: 34px;
+    margin-top: 52px;
+    margin-right: 22px;
+    font-size: 16px;
+    color: #999999;
+}
+.xinxiang .nav .right a::after ,
+.shengxian .nav .right a::after{
+    position: absolute;
+    top: 6px;
+    right: -18px;
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+}
+.xinxiang .content ul li {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    text-align: center;
+    background-color: #f0f9f4;
+    background-size: contain;
+}
+.xinxiang .content ul li:nth-child(4n) {
+    margin-right: 0px;
+}
+.xinxiang .content ul li a img {
+    width: 304px;
+}
+.xinxiang .content ul li a h2 {
+    /* margin-left: 69px; */
+    margin-top: 19px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.xinxiang .content ul li a .price {
+    /* margin-left: 131px; */
+    margin-top: 14px;
+    font-size: 23px;
+    color: #9a2e1f;
+}
+.xinxiang .content ul li a .price span {
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.xinxiang .content ul li a .new {
+    position: absolute;
+    left: 24px;
+    top: 21px;
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 51px;
+    color: #27ba9b;
+    border: 3px solid #27ba9b;
+}
+
+.shengxian .nav ul {
+     margin-left: 674px;
+}
+.shengxian .nav ul li a{
+    float: left;
+    margin-top: 52px;
+    margin-right: 11px;
+    width: 46px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+.shengxian .nav ul li a:hover {
+    background-color: #27ba9b;
+    color: #fefbfc;
+}
+
+.shengxian .wrapper .body .left {
+   float: left;
+    width: 242px;
+    height: 617px;
+}
+.shengxian .body .right ul {
+    margin-left: 37px;
+}
+.shengxian .body .right ul li {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    width: 232px;
+    height: 304px;
+    text-align: center;
+}
+.shengxian .body .right ul li a img {
+    width: 190px;
+}
+.shengxian .body .right ul li:first-child {
+    margin-left: 37px;
+}
+.shengxian .body .right ul li:nth-child(5n){
+    margin-left: 37px;
+}
+.shengxian .body .right ul li a h2 {
+    margin-left: 19px;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+.shengxian .body .right ul li a p {
+    margin-left: 19px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 17px;
+    color: #9a2e1f;
+}
+
+.shengxian .body .right ul li a p span {
+    font-size: 22px;
+}
+.shengxian .body .right ul li:hover{
+    border: 2px solid #27ba9b;
+} 
+
+.server {
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-right: 80px;
+    height: 302px;
+}
+.server .kefu,
+.server .guanzhu {
+    float: left;
+    width: 185px;
+}
+.server .download {
+    float: left;
+    width: 241px;
+    margin-left: 93px;
+    border-right: 2px solid #f2f2f2;
+}
+.server .guanzhu {
+    margin-left: 120px;
+}
+.server .kefu .titl,
+.server .guanzhu .titl,
+.server .download .titl {
+    text-align: center;
+    font-size: 16px;
+    color: #999999;
+}
+.server .kefu .online,
+.server .kefu .question,
+.server .guanzhu .wechat,
+.server .guanzhu .weibo {
+    float: left;
+    margin-top: 30px;
+    width: 90px;
+    height: 90px;
+    padding-top: 20px;
+    border: 1px solid #eeeeee;
+
+}
+.server .kefu .question {
+    margin-left: 5px;
+}
+.server .guanzhu .weibo {
+    margin-left: 5px;
+}
+.server .kefu .online .img,
+.server .kefu .question .img,
+.server .guanzhu .wechat .img,
+.server .guanzhu .weibo .img {
+    width: 30px;
+    height: 27px;
+    margin: 0 auto;
+    background-image: url(../images/sprites.png);
+    background-position: -250px -70px;
+}
+.server .kefu .online p,
+.server .kefu .question p,
+.server .guanzhu .wechat p,
+.server .guanzhu .weibo p {
+    font-size: 14px;
+    color: #999999;
+   text-align: center;
+    margin-top: 6px;
+}
+
+.server .kefu .question .img {
+    background-position: -349px -71px;
+}
+.server .guanzhu .wechat .img {
+    width: 36px;
+    height: 29px;
+    background-position: -204px -15px;
+}
+.server .guanzhu .weibo .img {
+    width: 35px;
+    height: 29px;
+    background-position: -350px -14px;
+}
+
+.download .qrcode {
+    float: left;
+
+    margin-top: 30px;
+    width: 105px;
+    height: 103px;
+    background-image: url(../uploads/qrcode.png);
+    background-size: contain;
+}
+.download .scancode {
+    float: left;
+    margin-top: 37px;
+    margin-left: 6px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #999999;
+}
+.download .downloadApp {
+    float: left;
+    margin-left: 6px;
+    font-size: 14px;
+    color: #999999;
+}
+.download button {
+    float: left;
+    margin-left: 6px;
+    margin-top: 18px;
+    width: 103px;
+    height: 32px; 
+    color: #fff;
+    border: 1px solid #25ba9b;
+    background-color: #25ba9b; 
+}
+
+.server .phone {
+    float:right;
+    margin-right: 50px;
+    text-align: center;   
+}
+.server .phone .titl {
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+}
+
+.server .phone .number {
+    margin-top: 55px;
+    font-size: 22px;
+    color: #666666;
+}
+.server .phone .time {
+    margin-top: 17px;
+    font-size: 15px;
+    color: #999999;
+}

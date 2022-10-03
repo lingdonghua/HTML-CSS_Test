@@ -1,0 +1,189 @@
+/* 公共样式 */
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+.shortcut {
+    height: 52px;
+    background-color: #333333;
+} 
+.shortcut .nav ul {
+    float: right;
+}
+.shortcut .nav ul li {
+    float: left;
+    height: 52px;
+    line-height: 52px;
+}
+.shortcut .nav ul li a {
+    font-size: 14px;
+    padding: 0 16px;
+    color:#dcdcdc;;
+    border-right: 1px solid #666666;;
+}
+.shortcut .nav ul li:last-child a {
+    border-right: none;
+    padding: 0;
+}
+.shortcut .nav ul li:last-child a::before {
+    float: left;
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-right: 8px;
+    content: '';
+    display: block;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+}
+
+/* 头部 */
+.heard {
+    margin: 30px auto;
+   height: 70px;
+
+}
+.heard .logo h1{
+    float: left;
+    width: 208px;
+    height: 70px;
+
+}
+/* 浏览器搜索优化 */
+.heard .logo h1 a {
+    display: block;
+    width: 208px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+.heard .nav ul {
+    float: left;
+    margin-left: 40px;
+    margin-top: 26px;
+}
+.heard .nav ul li {
+    float: left;
+    margin-right: 48px;
+}
+.heard .nav ul li a {
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+.heard .nav ul li a:hover {
+    color: #27ba9b;;
+    border-bottom: 1px solid #27ba9b;;
+}
+
+.heard .search {
+    float: left;
+    position: relative;
+    margin-left: 58px;
+    border-bottom: 2px solid #e7e7e7;
+    margin-top: 26px;
+    /* margin-right: 50px; */
+    width: 172px;
+    height: 30px;
+}
+.heard .search input {
+    
+    padding-left: 31px;
+    width: 172px;
+    height: 28px;
+}
+.heard .search input::placeholder {
+    font-size: 14px;
+    color:  #cccccc;;
+}
+.heard .search span {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -79px -69px;
+}
+/* 购物车 */
+.heard .shoppingcar {
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+}
+.heard .shoppingcar span {
+    position: absolute;
+    top: -6px;
+    right: -7px;
+    display: inline-block;
+    width: 20px;
+	height: 15px;
+	background-color: #e26237;
+	border-radius: 8px;
+    text-align: center;
+    color: #ffffff;;
+    line-height: 15px;
+    font-size: 13px
+}
+
+/* 版权区域 */
+.footer {
+    height: 346px;
+    background-color: #333333;
+}
+.footer .wrapper .top {
+    padding: 57px 0;
+    padding-left: 176px;
+    height: 176px;
+    border-bottom: 3px solid #434343;
+}
+.footer .wrapper .top ul li {
+    float: left;
+    margin-right: 250px;
+    font-size: 28px;
+    color: #ffffff;;
+}
+.footer .wrapper .top ul li:last-child {
+    margin-right: 0;
+} 
+.footer .wrapper .top ul li::before {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    vertical-align: middle;
+    background-image: url(../images/sprites.png);
+    background-position: 0 0;
+
+}
+.footer .wrapper .top ul li:nth-child(2)::before{
+    background-position: -64px 0;
+}
+.footer .wrapper .top ul li:nth-child(3)::before{
+    background-position: -130px 0;
+}
+.footer .bottom {
+    margin-top: 41px;
+    margin-left: 426px;
+}
+.footer .bottom p {
+    font-size: 14px;
+    color: #999999;
+    float: left;
+}
+.footer .bottom p a {
+    font-size: 14px;
+    color: #999999;
+}
+.footer .bottom p:last-child {
+   margin-top:13px;
+   margin-left: 140px;
+   
+}

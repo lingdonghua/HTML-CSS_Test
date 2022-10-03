@@ -1,0 +1,341 @@
+/* 用来美化index.html的css */
+* {
+    margin: 0;
+    padding: 0;
+    /* 內减模式 */
+    box-sizing: border-box;
+}
+/* 取出列表样式 */
+li {
+    list-style: none;
+}
+/* 取出超链接下划线 */
+a {
+    text-decoration: none;
+}
+/* 消除浮点影响和外边框塌陷问题 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+
+/*背景色 */
+body {
+    background-color: #f3f5f7;
+}
+
+ .wrapper {
+    width: 1204px;
+    margin: 0 auto;
+}
+
+.head {
+    margin: 30px auto;
+    height: 42px;
+
+}
+h1 {
+    float: left;
+}
+.nav {
+    float: left;
+    height: 42px;
+    margin-left: 70px;
+}
+.nav li {
+    float: left;
+    margin-right: 37px;
+    height: 42px;
+    
+}
+.nav li a {
+    display: block;
+    padding: 9px;
+    height: 42px;
+    font-size: 18;
+    color: #050505;
+}
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+.search {
+    float: left;
+    margin-left: 57px;
+    border: solid 1px #00a4ff; 
+    border-right: 0;
+    width: 413px;
+    height: 42px;   
+}
+.search input {
+    float: left;
+    padding: 20px;
+    border: 0;
+    width: 360px;
+    height: 40px;
+}
+.search button {
+    border: 0;
+    width: 52px;
+    height: 42px;
+    background-image: url(../images/btn.png);
+}
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.user {
+    float: left;
+    margin-left: 33px;
+    line-height: 42px;
+    width: 118px;
+	height: 42px;
+}
+.user img {
+     /* 调节图片垂直对齐方式, middle:居中 */
+    vertical-align: middle;
+}
+.user span {
+    margin-left: 5px;
+}
+.banner {
+    height: 420px;
+    background-color: #1c036c;;
+}
+.banner .left {
+    float: left;
+    padding: 0 20px;
+    width: 190px;
+	height: 420px;
+	background-color: rgba(0,0,0,0.3);
+    line-height: 44px;
+}
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../images/banner2.png);
+}
+
+.banner .left a {
+    font-size: 14px;
+    color: #fff;
+}
+.banner .left span {
+    float: right;
+    color: #e5e5e5;
+}
+.banner .right {
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 76px;
+    width: 228px;
+	height: 300px;
+	background-color: #ffffff;
+}
+.banner .right h2{
+    font-size: 18px;
+    color: #ffffff;
+	height: 48px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #9bceea;
+}
+.banner .right .content {
+    padding: 0 19px
+    
+}
+.banner .right .content dl {
+    padding: 12px 0;
+    border-bottom: 2px solid #e5e5e5;
+    font-size: 12px;
+    color: #4e4e4e;
+}
+.banner .right .content dl dd {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.banner .right .content span {
+    font-size: 16px;
+}
+.banner .right .kecheng {
+    display: block;
+    margin: 4px auto;
+    border: 1px solid #00a4ff;
+    width: 200px;
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 700;
+}
+
+.goods {
+    margin-top: 8px;
+    width: 1200px;
+	height: 60px;
+    line-height: 60px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 3px 0px 
+		rgba(118, 118, 118, 0.2);
+}
+.goods h2 {
+    float: left;
+    margin: auto 34px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.goods ul li {
+    float: left;
+}
+.goods ul li a{
+    border-left: 1px solid #bfbfbf;
+    padding:0 34px;
+    font-size: 16px;
+    color: #050505;
+}
+.goods .hobbit {
+    float: right;
+    margin-right: 26px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+.jingpingke {
+    margin-top: 34px;
+}
+.jingpingke h2 {
+    font-size: 20px;
+    color: #494949;
+    height: 45px;
+}
+.jingpingke h2 a {
+    float: right;
+    font-size: 12px;
+    margin-right: 11px;
+    color: #a5a5a5;
+}
+.jingpingke .content ul li {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+	height: 270px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 5px 0px 
+		rgba(118, 118, 118, 0.5);
+}
+.jingpingke .content li:nth-child(5n) {
+    margin-right: 0;
+}
+.jingpingke .content ul li a h2 {
+    margin: 15px 24px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+
+.jingpingke .content ul li p {
+    margin: 0 24px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.jingpingke .content ul li p span {
+    color: #ff7c2d;
+}
+
+.biancheng {
+    margin-top: 38px;
+}
+
+.biancheng .nav2 h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    height: 45px;
+}
+.biancheng .nav2 ul {
+    margin-left: 375px;
+}
+.biancheng .nav2 ul li a{
+    float: left;
+    margin-top: 5px;
+    margin-left: 66px;
+    font-size: 16px;
+    color: #868686;
+}
+.biancheng ul li a:hover{
+    color: #00a4ff;
+}
+.biancheng .chakan {
+    float: right;
+    font-size: 12px;
+    margin-right: 11px;
+    color: #a5a5a5;
+}
+.biancheng .content .left {
+    float: left;
+    width: 228px;
+    height: 392px;
+    background-color: pink;
+}
+.biancheng .content .top {
+    float: right;
+    margin-bottom: 23px;
+}
+.biancheng .content .mid {
+    float: right;
+    width: 957px;
+}
+.biancheng .content .mid li {
+    float: left;
+    margin-right: 15px;
+}
+.biancheng .content .mid li:last-child {
+    margin-right: 0;
+}
+.footer {
+    margin-top: 40px;
+    padding-top: 33px;
+    height: 417px;
+    background-color: #fff;
+}
+.footer .left {
+   float: left;
+}
+ .footer .left p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666666;
+ }
+ .footer .content {
+    float: right;
+    margin-right: 28px;
+ }
+ .footer .content dl {
+    float: left;
+    margin-right: 144px;
+ }
+ .footer .content dl dt {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333333;
+ }
+ .footer .content dl dd {
+    font-size: 12px;
+    color: #333333;
+ }
+ .footer .content dl:last-child{
+    margin-right: 12px;
+ }
+
+ .jingpingke .content ul li {
+    position: relative;
+ }
+ .jingpingke .content ul li .hot {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+ }
