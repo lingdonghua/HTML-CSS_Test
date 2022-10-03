@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url(../images/f1_1.jpg) center  no-repeat;
+    background-size: cover;
+}
+
+.cloud img {
+   position: absolute;
+   left: 50%;
+   top: 0;
+}
+.cloud img:nth-child(1) {
+   margin-left: -300px;
+   margin-top: 20px;
+   animation: cloud 1s infinite linear alternate;
+}
+.cloud img:nth-child(2) {
+    margin-left: 400px;
+    margin-top: 130px;
+   animation: cloud 1s infinite linear alternate 0.2s;
+ }
+ .cloud img:nth-child(3) {
+    margin-left: -560px;
+    margin-top: 200px;
+   animation: cloud 1s infinite linear alternate 0.5s;
+ }
+
+ @keyframes cloud {
+    to{
+        transform: translateX(20px);
+    }
+ }
+
+ .center img {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+ }
+
+ .center img:nth-child(1){
+     margin-left: -350px;
+     margin-top: -300px;
+     animation: qiqiu 1s infinite alternate linear;
+ }
+ .center img:nth-child(2){
+    margin-left: -324px;
+    margin-top: -123px;
+}
+
+@keyframes qiqiu {
+    to{
+        transform: translateY(30px);
+    }
+}
+
+.biaoqian img {
+    position: absolute;
+    left: 50%;
+    top: 550px;
+}
+.biaoqian img:nth-child(1) {
+    margin-left: -400px;
+    margin-top: -10px;
+    animation: biaoqian 0.6s infinite alternate linear 0.2s;
+}
+.biaoqian img:nth-child(2) {
+    margin-left: -160px;
+    animation: biaoqian 0.6s infinite alternate linear 0.4s;
+}
+.biaoqian img:nth-child(4) {
+    animation: biaoqian 0.6s infinite alternate linear 0.4s;
+}
+.biaoqian img:nth-child(3) {
+    margin-left: 250px;
+    margin-top: -10px;
+    animation: biaoqian 0.6s infinite alternate linear 0.2s;
+}
+
+@keyframes biaoqian {
+    to{
+        transform: translateY(20px);
+    }
+}

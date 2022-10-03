@@ -1,0 +1,274 @@
+/* 个人中心样式表 */
+
+/* 公共区域 */
+.pannle {
+    padding: 25px 20px 25px 20px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.pannle_titl {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.pannle_titl h5 {
+    font-size: 22px;
+    color: #333333;
+    font-weight: 400;
+}
+
+.pannle_titl span {
+    font-size: 16px;
+    color: #999999;
+    margin-top: 5px;
+}
+.xtx_body {
+    padding: 30px 0 84px 0;
+    background-color: #f6f6f6;
+}
+
+.xtx_body .wrapper {
+    display: flex;
+}
+
+/*  侧边导航栏 */
+.xtx_body .aside {
+    padding-top: 47px;
+    width: 227px;
+    min-height: 500px;
+    background-color:#ffffff;
+    margin-right: 18px;
+}
+
+.xtx_body .aside .top {
+    width: 227px;
+    height: 180px;
+    border-bottom: 1px solid #f4f4f4  ;
+}
+.xtx_body .aside .top a {
+    margin-left: 66px;
+}
+
+.xtx_body .aside a img {
+    margin-left: 4px;
+    width: 86px;
+    height: 86px;
+}
+.xtx_body .aside a p {
+    font-size: 18px;
+    color: #333333;
+    margin-top: 10px;
+    margin-left: 83px;
+}
+.xtx_body .aside .vip {
+    display: block;
+    margin-top: 8px;
+    width: 93px;
+	height: 26px;
+    background-color: #e05f31;
+	border-radius: 13px;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+}
+/* 我的账户 */
+/* 交易管理 */
+/* 我的收藏 */
+/* 帮助中心 */
+.xtx_body .aside .account,
+.xtx_body .aside .jiaoyi,
+.xtx_body .aside .collect,
+.xtx_body .aside .service {
+    padding: 22px 0;
+    border-bottom: 1px solid #f4f4f4;
+}
+.xtx_body .aside .account h3,
+.xtx_body .aside .jiaoyi h3,
+.xtx_body .aside .collect h3,
+.xtx_body .aside .service h3 {
+    margin-left: 66px;
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+}
+.xtx_body .aside .account ul li,
+.xtx_body .aside .jiaoyi ul li,
+.xtx_body .aside .collect ul li,
+.xtx_body .aside .service ul li {
+    margin-left: 66px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.xtx_body .aside .account ul li:hover,
+.xtx_body .aside .jiaoyi ul li:hover,
+.xtx_body .aside .collect ul li:hover,
+.xtx_body .aside .service ul li:hover {
+    list-style: disc;
+    color: #5cb99e;
+}
+
+
+
+/* 主体内容 */
+.xtx_body .main {
+    flex: 1;
+}
+/* 内容最上面 */
+.xtx_body .main .top {
+    display: flex;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    background-color: #fff;
+    height: 132px;
+}
+.xtx_body .main .top .left,
+.xtx_body .main .top .right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    border-right: 1px solid #f4f4f4;
+   
+}
+.xtx_body .main .top .left a,
+.xtx_body .main .top .right a {
+    text-align: center;
+}
+.xtx_body .main .top .left a img{
+    width: 25px;
+    height: 25px;
+}
+.xtx_body .main .top .left a p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+.xtx_body .main .top .left a:last-child img {
+    width: 18px;
+    height: 25px;
+}
+.xtx_body .main .top .right {
+    flex: 1;
+}
+.xtx_body .main .top .right a p {
+    margin-top: 4px;
+    font-size: 16px;
+    color: #333333;
+}
+.xtx_body .main .top .right a span {
+    font-size: 25px;
+    color: #e05e30;
+}
+
+/* 我的订单 */
+.orders .content li{
+    display: flex;
+    border: 1px solid #f4f4f4;
+    height: 136px;
+    margin-bottom: 20px;
+}
+
+.orders .content .goods {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.orders .content .goods .pic {
+    width: 107px;
+    height: 107px;
+}
+.orders .content .goods .text {
+    flex: 1;
+    /* 溢出的时候显示省略号 */
+    /* 因为弹性盒子的尺寸可以被内容撑开, 不换行的文字可以撑开这个盒子的尺寸 */
+    width: 0;
+}
+.orders .content .goods .text h5 {
+    font-size: 16px;
+    color: #333333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.orders .content .goods .text p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #999999;
+}
+.orders .content .status {
+    padding-left: 120px;
+    width: 244px;
+    line-height: 136px;
+    font-size: 14px;
+    color: #e05e30;
+}
+.orders .content .pay {
+    width: 200px;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+.orders .content .pay p {
+    font-size: 14px;
+    color: #9a2e1f;
+}
+.orders .content .action {
+    width: 180px;
+    font-size: 14px;
+}
+.orders .content .action a {
+    width: 100px;
+    height: 30px;
+    background-color: #5eb69c;
+	border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.orders .content .common {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.xtx_goods_collect .goods ul {
+    display: flex;
+    justify-content: space-around;
+}
+.xtx_goods_collect .goods ul li {
+    width: 174px;
+    position: relative;
+
+}
+
+.xtx_goods_collect .goods ul li span {
+    font-size: 22px;
+    color: #9a2e1f;
+    margin-top: 15px;
+}
+.xtx_goods_collect .goods ul li p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 51px;
+    border-radius: 3px;
+	border: solid 1px #5eb69c;
+    text-align: center;
+    line-height: 51px;
+    font-size: 18px;
+    color: #5eb69c;
+}
+.xtx_goods_collect .goods img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
